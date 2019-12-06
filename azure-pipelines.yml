@@ -19,3 +19,12 @@ steps:
   displayName: 'Run a multi-line script'
 - task: SonarQubeAnalyze@4
 
+- task: Terraform@2
+  inputs:
+    TemplatePath: '/path/to'
+    Arguments: '/terraform'
+    InstallTerraform: true
+    UseAzureSub: true
+    ConnectedServiceNameSelector: 'ConnectedServiceNameARM'
+    ManageState: false
+
