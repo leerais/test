@@ -18,5 +18,4 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 - task: SonarQubeAnalyze@4
-- task: owaspzap@1
-  inputs:
+
